@@ -150,7 +150,7 @@ var stui = {
                 $("#stui_history").append(list);
             }
             else
-                $("#stui_history").append("<p style='padding: 80px 0; text-align: center'>您还没有看过影片哦</p>");
+                $("#stui_history").append("<p style='padding: 80px 0; text-align: center'>您还没有看过动漫哦</p>");
 
             $(".historyclean").on("click",function(){
                 $.cookie("recente",null,{expires:-1,path: '/'});
