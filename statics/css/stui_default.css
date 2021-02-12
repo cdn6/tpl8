@@ -196,15 +196,6 @@ a:focus,a:hover,a:active{ text-decoration:none;}
 .embed-responsive-16by9{padding-bottom:56.25%}
 .embed-responsive-4by3{padding-bottom:75%}
 
-/* autocomplete */
-.autocomplete-suggestions{ padding: 0 10px; margin-top: 5px; border-radius:4px;}
-.autocomplete-suggestions.active{position: absolute; z-index: 9999; top: 100%; width: 100%; background-color: #FFFFFF; box-shadow: 0 2px 8px rgba(0,0,0,.2);}
-.autocomplete-suggestion{padding:10px 0; cursor:pointer; border-top: 1px solid #EEEEEE;}
-.autocomplete-suggestion:first-child{border-top:0}
-.mac_results{ z-index: 9999; padding: 0 10px; margin-top: 5px; border-radius:4px; background-color: #FFFFFF; border:1px solid #EEEEEE; box-shadow: 0 2px 8px rgba(0,0,0,.2);}
-.mac_results li{padding:10px 0; cursor:pointer; border-top: 1px solid #EEEEEE;}
-.mac_results li:first-child{ border: 0;}
-
 /* bootstrap.js */
 .fade{opacity: 0;-webkit-transition: opacity .15s linear;-o-transition: opacity .15s linear;transition: opacity .15s linear;}
 .fade.in{opacity: 1;}
