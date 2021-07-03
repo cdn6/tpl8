@@ -25,7 +25,7 @@ var stui = {
     },
     'mobile': {
         'headroom': function() {
-            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/js/headroom.min.js", function() {
+            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/js/headroom.min.js", function() {
                 $("#header-top", function() {
                     (new Headroom(document.querySelector("#header-top"), {
                         tolerance: 5,
@@ -40,7 +40,7 @@ var stui = {
             })
         },
         'slide': function() {
-            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/js/flickity.pkgd.min.js", function() {
+            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/js/flickity.pkgd.min.js", function() {
                 $(".type-slide").each(function(a) {
                     $index = $(this).find(".active").index()*1;
                     if($index > 3){
@@ -71,7 +71,7 @@ var stui = {
     },
     'flickity': {
         'carousel': function() {
-            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/js/flickity.pkgd.min.js", function() {
+            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/js/flickity.pkgd.min.js", function() {
                 $(".carousel_center").flickity({
                     cellAlign: "center",
                     contain: true,
@@ -87,7 +87,7 @@ var stui = {
     },
     'images': {
         'lazyload': function() {
-            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/js/jquery.lazyload.min.js", function() {
+            $.getScript("https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/js/jquery.lazyload.min.js", function() {
                 $(".lazyload").lazyload({
                     effect: "fadeIn",
                     threshold: 300,
@@ -97,7 +97,7 @@ var stui = {
             })
         },
         'qrcode': function() {
-            $("img.qrcode").attr("src", "//api.maccms.com/qrcode/?w=150&h=150&url=" + encodeURIComponent(stui.browser.url) + "")
+            $("img.qrcode").attr("src", maccms.path +'/index.php/qrcode/index.html?url=' + encodeURIComponent(stui.browser.url) + "")
         }
     },
     'common': {
@@ -108,20 +108,20 @@ var stui = {
                 $("link[name='skin']").attr({href:favstyle});
             }
             $(".gray-color").click(function(){
-                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-gray.css"});
-                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-gray.css",365);
+                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-gray.css"});
+                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-gray.css",365);
             });
             $(".gules-color").click(function(){
-                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-gules.css"});
-                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-gules.css",365);
+                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-gules.css"});
+                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-gules.css",365);
             });
             $(".blue-color").click(function(){
-                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-blue.css"});
-                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-blue.css",365);
+                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-blue.css"});
+                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-blue.css",365);
             });
             $(".green-color").click(function(){
-                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-green.css"});
-                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8@e299e15/statics/css/stui_color-green.css",365);
+                $("link[name='skin']").attr({href:"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-green.css"});
+                createCookie('stylecolor',"https://cdn.jsdelivr.net/gh/cdn6/tpl8/statics/css/stui_color-green.css",365);
             });
             function createCookie(name,value,days){
                 var expires;
