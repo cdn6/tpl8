@@ -348,8 +348,7 @@ var MAC={
             MAC.Pop.Show(400,280,'数据报错',maccms.path+'/index.php/gbook/report.html?id='+id+'&name='+ encodeURIComponent(name),function(r){
 
             });
-        }
-    },
+        },
         'Reports':function(name,id){
             MAC.Pop.Show(400,280,'求番留言',maccms.path+'/index.php/gbook/report.html?id='+id+'&name='+ encodeURIComponent(name),function(r){
 
