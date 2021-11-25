@@ -97,7 +97,8 @@ var stui = {
             })
         },
     'qrcode': function() {
-            $("img.qrcode").attr("src", "//qrcode.tlyy.in/api.php?url=" + encodeURIComponent(stui.browser.url) + "")
+            //$("img.qrcode").attr("src", "//qrcode.tlyy.in/api.php?url=" + encodeURIComponent(stui.browser.url) + "")
+            $('img.qrcode').attr('src', maccms.path +'/index.php/qrcode/index.html?url='+ MAC.Url);
         }
     },
     'common': {
